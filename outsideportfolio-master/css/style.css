@@ -1,0 +1,293 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color:#e6e6ff;
+  font-size: 20px;
+  margin: 0;
+  /* padding: 0; */
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+.desknav{
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  /* background-color:20333; */
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  /* color: white; */
+  padding: 14px 16px;
+  text-decoration: none;
+  /* font-size: 17px; */
+  display: block;
+}
+
+.topnav a.icon {
+  /* background: black; */
+  display: block;
+  /* position: absolute; */
+  /* right: 0;
+  top: 0; */
+}
+
+.topnav a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+
+.active {
+  /* background-color: #4CAF50; */
+  color: white;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  border: 2px solid black;
+}
+
+.skip a:focus{
+  top: 0;
+  transition:none;
+}
+
+footer{
+  background-color: lightgrey;
+  color: black;
+  grid-column: 1 / -1;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+}
+
+p{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: left;
+  padding: 10px;
+}
+.current{
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  }
+
+.title {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  }
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  }
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(9, 0, 134);
+  }
+
+button:hover, a:hover {
+  opacity: 0.7;
+  color: darkblue;
+  }
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  color: darkblue;
+  text-align: center;
+  line-height: 1;
+  padding: 5px;
+  }
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    /* border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    line-height: 1; */
+    padding: 15px;
+    text-decoration: underline;
+  }
+
+  h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    line-height: 1;
+    padding: 10px;
+    /* border-style: solid;
+    border-width: 5px 5px 5px 5px; */
+    line-height: 1;
+    padding: 15px;
+  }
+  .descrip{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-align: center;
+    /* font-style: italic; */
+    padding-top: 2px;
+    padding-bottom: 10px;
+  }
+  ol.published{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: circle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+
+  ol.tutorials{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: circle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+  ol.workshops{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    list-style-type: circle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+  ol.technical{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    list-style: circle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+  ul.talks{
+    padding-top: .5em;;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    list-style: circle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+  .service{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    list-style: circle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    }
+
+@media all and (min-width:800px){
+.topnav{
+  display: none;
+}
+
+.desknav{
+  display: block;
+}
+nav{
+  grid-column: 1/-1;
+  text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 1em 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  nav li{
+    display: inline;
+    padding-right: 20px;
+  }
+
+  nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav a:hover{
+    text-decoration: underline;
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    border: 2px solid black;
+  }
+
+  .skip a:focus{
+    top: 0;
+    transition:none;
+  }
+  a:focus{
+    transition: none;
+    top: 0px;
+  }
+
+  *:focus{
+    border: 2px solid black;
+  }
+
+}
+
+}
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: auto;
+  }
+}
